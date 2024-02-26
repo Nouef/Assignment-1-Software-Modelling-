@@ -1,0 +1,358 @@
+#3.
+#Below is the implementation of python classes for the identified classes. Each class includes a constructor, attributes with getters and setters, and placeholders for required functions with simple comments describing their purpose:
+
+class Passenger:
+  def __init__(self, first_name, last_name, booking_number, passport_number, phone_number, frequent_flyer_info, needs_assistance):
+ # here is constructor to initialize Passenger attributes
+      self.first_name = first_name
+      self.last_name = last_name
+      self.booking_number = booking_number
+      self.passport_number = passport_number
+      self.phone_number = phone_number
+      self.frequent_flyer_info = frequent_flyer_info
+      self.needs_assistance = needs_assistance
+
+  # getter and setter methods for passenger attributes
+  def get_first_name(self):
+      return self.first_name
+
+  def set_first_name(self, first_name):
+      self.first_name = first_name
+
+  def get_last_name(self):
+      return self.last_name
+
+  def set_last_name(self, last_name):
+      self.last_name = last_name
+
+  def get_booking_number(self):
+      return self.booking_number
+
+  def set_booking_number(self, booking_number):
+      self.booking_number = booking_number
+
+  def get_passport_number(self):
+      return self.passport_number
+
+  def set_passport_number(self, passport_number):
+      self.passport_number = passport_number
+
+  def get_phone_number(self):
+      return self.phone_number
+
+  def set_phone_number(self, phone_number):
+      self.phone_number = phone_number
+
+  def get_frequent_flyer_info(self):
+      return self.frequent_flyer_info
+
+  def set_frequent_flyer_info(self, frequent_flyer_info):
+      self.frequent_flyer_info = frequent_flyer_info
+
+  def get_needs_assistance(self):
+      return self.needs_assistance
+
+  def set_needs_assistance(self, needs_assistance):
+      self.needs_assistance = needs_assistance
+
+  
+  # function to perform check-in for  a passenger
+  def check_in(self):
+      pass
+  # function to allow passenger to select a seat
+  def select_seat(self):
+      pass
+  # function to retrieve passenger's boarding pass
+  def get_boarding_pass(self):
+      pass
+
+
+class Flight:
+  def __init__(self, flight_number, departure_airport, arrival_airport, departure_time, arrival_time, gate_number, available_seats, available_staff):
+    # here is constructor to initialize Flight attributes
+      self.flight_number = flight_number
+      self.departure_airport = departure_airport
+      self.arrival_airport = arrival_airport
+      self.departure_time = departure_time
+      self.arrival_time = arrival_time
+      self.gate_number = gate_number
+      self.available_seats = available_seats
+      self.available_staff = available_staff
+
+  # getter and setter methods for flight attributes
+  def get_flight_number(self):
+      return self.flight_number
+
+  def set_flight_number(self, flight_number):
+      self.flight_number = flight_number
+
+  def get_departure_airport(self):
+      return self.departure_airport
+
+  def set_departure_airport(self, departure_airport):
+      self.departure_airport = departure_airport
+
+  def get_arrival_airport(self):
+      return self.arrival_airport
+
+  def set_arrival_airport(self, arrival_airport):
+      self.arrival_airport = arrival_airport
+
+  def get_departure_time(self):
+      return self.departure_time
+
+  def set_departure_time(self, departure_time):
+      self.departure_time = departure_time
+
+  def get_arrival_time(self):
+      return self.arrival_time
+
+  def set_arrival_time(self, arrival_time):
+      self.arrival_time = arrival_time
+
+  def get_gate_number(self):
+      return self.gate_number
+
+  def set_gate_number(self, gate_number):
+      self.gate_number = gate_number
+
+  def get_available_seats(self):
+      return self.available_seats
+
+  def set_available_seats(self, available_seats):
+      self.available_seats = available_seats
+
+  def get_available_staff(self):
+      return self.available_staff
+
+  def set_available_staff(self, available_staff):
+      self.available_staff = available_staff
+
+  
+  # function to update the gate information for the flight
+  def update_gate(self):
+      pass
+  # function to check the availability of seats for the flight
+  def check_availability(self):
+      pass
+  # function to assign seats to passengers for the flight
+  def assign_seat(self):
+      pass
+
+
+class BoardingPass:
+  def __init__(self, passenger_name, flight_date, flight_number, flight_class, seat_number, gate_number, boarding_time, assistance_requirements, electronic_ticket, terminal):
+    # here is constructor to initialize BoardingPass attributes
+      self.passenger_name = passenger_name
+      self.flight_date = flight_date
+      self.flight_number = flight_number
+      self.flight_class = flight_class
+      self.seat_number = seat_number
+      self.gate_number = gate_number
+      self.boarding_time = boarding_time
+      self.assistance_requirements = assistance_requirements
+      self.electronic_ticket = electronic_ticket
+      self.terminal = terminal
+
+  # getter and setter methods for BoardingPass attributes
+  def get_passenger_name(self):
+      return self.passenger_name
+
+  def set_passenger_name(self, passenger_name):
+      self.passenger_name = passenger_name
+
+  def get_flight_date(self):
+      return self.flight_date
+
+  def set_flight_date(self, flight_date):
+      self.flight_date = flight_date
+
+  def get_flight_number(self):
+      return self.flight_number
+
+  def set_flight_number(self, flight_number):
+      self.flight_number = flight_number
+
+  def get_flight_class(self):
+      return self.flight_class
+
+  def set_flight_class(self, flight_class):
+      self.flight_class = flight_class
+
+  def get_seat_number(self):
+      return self.seat_number
+
+  def set_seat_number(self, seat_number):
+      self.seat_number = seat_number
+
+  def get_gate_number(self):
+      return self.gate_number
+
+  def set_gate_number(self, gate_number):
+      self.gate_number = gate_number
+
+  def get_boarding_time(self):
+      return self.boarding_time
+
+  def set_boarding_time(self, boarding_time):
+      self.boarding_time = boarding_time
+
+  def get_assistance_requirements(self):
+      return self.assistance_requirements
+
+  def set_assistance_requirements(self, assistance_requirements):
+      self.assistance_requirements = assistance_requirements
+
+  def get_electronic_ticket(self):
+      return self.electronic_ticket
+
+  def set_electronic_ticket(self, electronic_ticket):
+      self.electronic_ticket = electronic_ticket
+
+  def get_terminal(self):
+      return self.terminal
+
+  def set_terminal(self, terminal):
+      self.terminal = terminal
+  # function to generate the boarding pass
+  def generate_boarding_pass(self):
+      pass
+  # function to print the boarding pass
+  def print_boarding_pass(self):
+      pass
+  # function to download the boarding pass
+  def download_boarding_pass(self):
+      pass
+
+
+class CheckInSystem:
+  def __init__(self, current_date, flights, passengers, flight_status, baggage_handling_status, passenger_boarding_status, passenger_ticket_validation_status, passenger_passed_security_screening_status):
+    # here is constructor to initialize CheckInSystem attributes
+      self.current_date = current_date
+      self.flights = flights
+      self.passengers = passengers
+      self.flight_status = flight_status
+      self.baggage_handling_status = baggage_handling_status
+      self.passenger_boarding_status = passenger_boarding_status
+      self.passenger_ticket_validation_status = passenger_ticket_validation_status
+      self.passenger_passed_security_screening_status = passenger_passed_security_screening_status
+
+  # getter and setter methods for CheckInSystem attributes
+  def get_current_date(self):
+      return self.current_date
+
+  def set_current_date(self, current_date):
+      self.current_date = current_date
+
+  def get_flights(self):
+      return self.flights
+
+  def set_flights(self, flights):
+      self.flights = flights
+
+  def get_passengers_list(self):
+      return self.passengers
+
+  def set_passengers_list(self, passengers_list):
+      self.passengers = passengers_list
+
+  def get_flight_status(self):
+      return self.flight_status
+
+  def set_flight_status(self, flight_status):
+      self.flight_status = flight_status
+
+  def get_baggage_handling_status(self):
+      return self.baggage_handling_status
+
+  def set_baggage_handling_status(self, status):
+      self.baggage_handling_status = status
+
+  def get_passenger_boarding_status(self):
+      return self.passenger_boarding_status
+
+  def set_passenger_boarding_status(self, status):
+      self.passenger_boarding_status = status
+
+  def get_passenger_ticket_validation_status(self):
+      return self.passenger_ticket_validation_status
+
+  def set_passenger_ticket_validation_status(self, status):
+      self.passenger_ticket_validation_status = status
+
+  def get_passenger_passed_security_screening(self):
+      return self.passenger_passed_security_screening_status
+
+  def set_passenger_passed_security_screening(self, passed):
+      self.passenger_passed_security_screening_status = passed
+
+  # function to verify passenger details
+  def verify_passenger(self):
+      pass
+
+#4.
+#Below is the code to create objects of the identified classes and utilize their functions to populate and display all the boarding pass details as per the figure:
+
+
+class Passenger:
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def get_full_name(self):
+        return f"{self.first_name} {self.last_name}"
+
+class Flight:
+    def __init__(self, flight_number, departure_airport, arrival_airport, departure_time, arrival_time, gate_number, seat_number):
+        self.flight_number = flight_number
+        self.departure_airport = departure_airport
+        self.arrival_airport = arrival_airport
+        self.departure_time = departure_time
+        self.arrival_time = arrival_time
+        self.gate_number = gate_number
+        self.seat_number = seat_number
+
+class BoardingPass:
+    def __init__(self, passenger_name, departure_date, departure_time, flight_number, gate_number, seat_number, electronic_ticket, arrival_time, terminal):
+        self.passenger_name = passenger_name
+        self.departure_date = departure_date
+        self.departure_time = departure_time
+        self.flight_number = flight_number
+        self.gate_number = gate_number
+        self.seat_number = seat_number
+        self.electronic_ticket = electronic_ticket
+        self.arrival_time = arrival_time
+        self.terminal = terminal
+
+# create Passenger object
+passenger = Passenger("JAMES", "SMITH")
+
+# create Flight object
+flight = Flight("NA4321", "CHICAGO ORD", "NEW YORK JFK", "06 DEC 20 11:40", "06 DEC 20 13:30", "03", "09A")
+
+# create BoardingPass object
+boarding_pass = BoardingPass(passenger.get_full_name(), "06 DEC 20", "11:40", "NA4321", "03", "09A", "629", "13:30", "2")
+
+# Display Boarding Pass details
+print("Passenger:")
+print(boarding_pass.passenger_name)
+print("From:")
+print(flight.departure_airport)
+print("Flight:")
+print(boarding_pass.flight_number)
+print("Date:")
+print(boarding_pass.departure_date)
+print("Time:")
+print(boarding_pass.departure_time)
+print("Gate:")
+print(boarding_pass.gate_number)
+print("Seat:")
+print(boarding_pass.seat_number)
+print("Electronic ticket:")
+print(boarding_pass.electronic_ticket)
+print("To:")
+print(flight.arrival_airport)
+print("Arrival time:")
+print(boarding_pass.arrival_time)
+print("Terminal:")
+print(boarding_pass.terminal)
